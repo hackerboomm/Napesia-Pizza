@@ -1,103 +1,96 @@
 :root{
     --primary-color: rgb(255, 240, 179);
-    --breaker-color: rgb(222, 206, 140);
+    --breaker-color: rgb(190, 174, 110);
+    --description-color: rgb(255, 240, 179);
     background-color: var(--primary-color);
 }
 @media (max-width: 768px){
 
-}
-.body{
-    background-image: url(icons/pizza-background.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 #headerSection{
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 4%;
+    margin-top: 4%;
 }
 #headerBox{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 90%;
+    height: 120px;
     background-color: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0px 5px 13px var(--breaker-color);
 }
 #mainDescription{
     margin-top: -5%;
 }
-.breakerSection{
+.pizzaLogo{
+    width: 40%;
+}
+.pizzaTypesSection{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.breakerBox{
-    width: 90%;
-    background-color: var(--breaker-color);
-    border-radius: 100px;
-    height: 3px;
+#pizzaMargherita{
+    background-image: url(pizzas/test-pizza-image-4.jpeg);
 }
-.pizzaSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#meatPizzas{
+    background-image: url(pizzas/test-pizza-image-2.jpeg);
 }
-#napolitenPizza{
-    background-image: url(pizzas/pizza-test-image.avif);
+#veganPizzas{
+    background-image: url(pizzas/test-pizza-image-3.jpeg);
 }
-.pizzaBox{
-    
-    background-position: center;
-    background-repeat: no-repeat;
+#mixedPizzas{
+    background-image: url(pizzas/test-pizza-image-1.jpeg);
+}
+.pizzaTypesBox{
+    width: 75%;
+    height: 170px;
     background-size: cover;
-    overflow: hidden;
-    width: 60%;
-    height: 160px;
-    margin-top: 2%;
-    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid var(--primary-color) 5px;
     border-radius: 20px;
-    box-shadow: 0px 5px 13px black;
-    border-right: solid rgb(214, 183, 144) 10px;
-    border-bottom: solid rgb(214, 183, 144) 10px;
-    border-left: solid bisque 10px;
-    border-top: solid bisque 10px;
+    box-shadow: 0px 5px 13px var(--breaker-color);
     display: flex;
-    align-items: center;
     justify-content: end;
+    align-items: center;
     flex-direction: column;
+    z-index: -2;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
 }
-.pizzaDescriptionBox{
-    width: 100%;
-    height: 40%;
-    background-color: bisque;
-    opacity: 70%;
+.pizzaTypesHeader{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    font-size: large;
     display: flex;
     align-items: center;
-    justify-content: start;
-    flex-direction: column;
+    justify-content: center;
 }
-.pizzaDescriptionDivision{
-    margin-top: -5%;
+.pizzaTypesHeader::after{
+    position: absolute;
+    content: '';
+    background-color: var(--description-color);
+    width: 130%;
+    height: 30px;
+    border-radius: 20px;
+    opacity: 75%;
+    z-index: -1;
+}
+.pizzaTypesAnchor{
+    text-decoration: none;
+    color: black;
+    width: 100%;
     display: flex;
     align-items: center;
-    width: 100%;
-    justify-content: flex-start;
-}
-.pizzaSubtitle{
-    margin-left: 5%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
-}
-.pizzaTitle{
-    margin-top: -3%;
-    margin-left: 8%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: small;
+    justify-content: center;
+    flex-direction: column;
 }
